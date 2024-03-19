@@ -5,7 +5,7 @@
 .input-group{
     display: flex;
     flex-direction: column;
-
+    background-color: #ffffff;
 }
 .txtTaskName{
     width: 15rem;

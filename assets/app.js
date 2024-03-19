@@ -74,10 +74,8 @@
                 alert("Görev Girmelisiniz.");
             } else {
                 if(!isEditTask) {
-                    // ekleme
                     gorevListesi.push({"id": gorevListesi.length + 1, "gorevAdi": taskInput.value, "durum": "pending"});
                 } else {
-                    // güncelleme
                     for(let gorev of gorevListesi) {
                         if(gorev.id == editId) {
                             gorev.gorevAdi = taskInput.value;
@@ -126,7 +124,6 @@
         })
       
         function updateStatus(selectedTask) {
-            // console.log(selectedTask.parentElement.lastElementChild);
             let label = selectedTask.nextElementSibling;
             let durum;
 
